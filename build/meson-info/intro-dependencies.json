@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Louvre",
+    "type": "pkgconfig",
+    "version": "2.18.1",
+    "compile_args": [
+      "-I/usr/include/Louvre",
+      "-I/usr/include/pixman-1",
+      "-I/usr/include/libdrm"
+    ],
+    "link_args": [
+      "/usr/lib/libLouvre.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "louvre_dep"
+    ]
+  }
+]

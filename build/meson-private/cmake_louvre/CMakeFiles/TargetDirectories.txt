@@ -1,0 +1,2 @@
+/home/islam/VisualStudioCodeProjects/spatio/build/meson-private/cmake_louvre/CMakeFiles/edit_cache.dir
+/home/islam/VisualStudioCodeProjects/spatio/build/meson-private/cmake_louvre/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "spatio",
+    "id": "spatio@exe",
+    "type": "executable",
+    "defined_in": "/home/islam/VisualStudioCodeProjects/spatio/meson.build",
+    "filename": [
+      "/home/islam/VisualStudioCodeProjects/spatio/build/spatio"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "cpp",
+        "machine": "host",
+        "compiler": [
+          "c++"
+        ],
+        "parameters": [
+          "-I/home/islam/VisualStudioCodeProjects/spatio/build/spatio.p",
+          "-I/home/islam/VisualStudioCodeProjects/spatio/build",
+          "-I/home/islam/VisualStudioCodeProjects/spatio",
+          "-I/usr/include/Louvre",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/libdrm",
+          "-fdiagnostics-color=always",
+          "-D_GLIBCXX_ASSERTIONS=1",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c++17",
+          "-O0",
+          "-g",
+          "-std=c++20"
+        ],
+        "sources": [
+          "/home/islam/VisualStudioCodeProjects/spatio/src/main.cpp",
+          "/home/islam/VisualStudioCodeProjects/spatio/src/SpatioCompositor.cpp",
+          "/home/islam/VisualStudioCodeProjects/spatio/src/SpatioOutput.cpp"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "c++"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "/usr/lib/libLouvre.so"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "Louvre"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": false
+  }
+]
