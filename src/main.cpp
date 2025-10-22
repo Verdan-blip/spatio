@@ -13,7 +13,7 @@ int main() {
     SpatioCompositor compositor;
 
     if (!compositor.start()) {
-        LLog::fatal("[louvre-example] Failed to start compositor.");
+        LLog::fatal("[spatio] Failed to start compositor.");
         return 1;
     }
 

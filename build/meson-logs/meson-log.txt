@@ -1,53 +1,54 @@
-Build started at 2025-10-11T18:27:16.769751
-Main binary: /usr/bin/python
+Build started at 2025-10-22T15:07:44.731005
+Main binary: /usr/bin/python3
 Build Options: 
 Python system: Linux
 The Meson build system
-Version: 1.9.1
-Source dir: /home/islam/VisualStudioCodeProjects/spatio
-Build dir: /home/islam/VisualStudioCodeProjects/spatio/build
+Version: 1.7.2
+Source dir: /home/islam/VisualStudioProjects/spatio
+Build dir: /home/islam/VisualStudioProjects/spatio/build
 Build type: native build
 Project name: spatio
 Project version: 0.1.0
-C compiler for the host machine: cc (gcc 15.2.1 "cc (GCC) 15.2.1 20250813")
-C linker for the host machine: cc ld.bfd 2.45.0
+C compiler for the host machine: cc (gcc 15.2.1 "cc (GCC) 15.2.1 20250808 (Red Hat 15.2.1-1)")
+C linker for the host machine: cc ld.bfd 2.44-3
 -----------
 Detecting archiver via: `gcc-ar --version` -> 0
 stdout:
-GNU ar (GNU Binutils) 2.45.0
+GNU ar version 2.44-3.fc42
 Copyright (C) 2025 Free Software Foundation, Inc.
 This program is free software; you may redistribute it under the terms of
 the GNU General Public License version 3 or (at your option) any later version.
 This program has absolutely no warranty.
 -----------
-C++ compiler for the host machine: c++ (gcc 15.2.1 "c++ (GCC) 15.2.1 20250813")
-C++ linker for the host machine: c++ ld.bfd 2.45.0
-C compiler for the build machine: cc (gcc 15.2.1 "cc (GCC) 15.2.1 20250813")
-C linker for the build machine: cc ld.bfd 2.45.0
+C++ compiler for the host machine: c++ (gcc 15.2.1 "c++ (GCC) 15.2.1 20250808 (Red Hat 15.2.1-1)")
+C++ linker for the host machine: c++ ld.bfd 2.44-3
+C compiler for the build machine: cc (gcc 15.2.1 "cc (GCC) 15.2.1 20250808 (Red Hat 15.2.1-1)")
+C linker for the build machine: cc ld.bfd 2.44-3
 -----------
 Detecting archiver via: `gcc-ar --version` -> 0
 stdout:
-GNU ar (GNU Binutils) 2.45.0
+GNU ar version 2.44-3.fc42
 Copyright (C) 2025 Free Software Foundation, Inc.
 This program is free software; you may redistribute it under the terms of
 the GNU General Public License version 3 or (at your option) any later version.
 This program has absolutely no warranty.
 -----------
-C++ compiler for the build machine: c++ (gcc 15.2.1 "c++ (GCC) 15.2.1 20250813")
-C++ linker for the build machine: c++ ld.bfd 2.45.0
-Build machine cpu family: x86_64
-Build machine cpu: x86_64
-Host machine cpu family: x86_64
-Host machine cpu: x86_64
-Target machine cpu family: x86_64
-Target machine cpu: x86_64
+C++ compiler for the build machine: c++ (gcc 15.2.1 "c++ (GCC) 15.2.1 20250808 (Red Hat 15.2.1-1)")
+C++ linker for the build machine: c++ ld.bfd 2.44-3
+Build machine cpu family: aarch64
+Build machine cpu: aarch64
+Host machine cpu family: aarch64
+Host machine cpu: aarch64
+Target machine cpu family: aarch64
+Target machine cpu: aarch64
 ../meson.build:11: WARNING: Consider using the built-in option for language standard version instead of using "-std=c++20".
 Dependency Louvre found: YES 2.18.1 (cached)
+Dependency pixman-1 found: YES 0.46.2 (cached)
 Build targets in project: 1
 
 Found ninja-1.12.1 at /usr/bin/ninja
 Running compile:
-Working directory:  /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmpk_jlawbu
+Working directory:  /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpr1c_xb1p
 Code:
 
         #ifdef __has_include
@@ -58,9 +59,9 @@ Code:
          #include <version>
         #endif
 -----------
-Command line: `c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmpk_jlawbu/testfile.cpp -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -fpermissive` -> 0
+Command line: `c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpr1c_xb1p/testfile.cpp -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -fpermissive` -> 0
 Running compile:
-Working directory:  /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m
+Working directory:  /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg
 Code:
 
         #include <version>
@@ -72,36 +73,29 @@ Code:
             return 0;
         }
 -----------
-Command line: `c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/testfile.cpp -o /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive` -> 1
+Command line: `c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp -o /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive` -> 1
 stderr:
-/home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/testfile.cpp: In function 'int main()':
-/home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/testfile.cpp:6:17: error: '_LIBCPP_VERSION' was not declared in this scope
+/home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp: In function 'int main()':
+/home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp:6:17: error: '_LIBCPP_VERSION' was not declared in this scope
     6 |                 _LIBCPP_VERSION;
       |                 ^~~~~~~~~~~~~~~
 -----------
 Running compile:
-Working directory:  /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer
+Working directory:  /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_
 Code:
 
         #include <version>
         using _LIBCPP_VERSION;
         int main(void) { return 0; }
 -----------
-Command line: `c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer/testfile.cpp -o /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive` -> 1
+Command line: `c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/testfile.cpp -o /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive` -> 1
 stderr:
-/home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer/testfile.cpp:3:15: error: expected nested-name-specifier before '_LIBCPP_VERSION'
+/home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/testfile.cpp:3:15: error: expected nested-name-specifier before '_LIBCPP_VERSION'
     3 |         using _LIBCPP_VERSION;
       |               ^~~~~~~~~~~~~~~
 -----------
-Running compile:
-Working directory:  /tmp/tmpk4qrgiv9
-Code:
-int i = static_cast<int>(0);
------------
-Command line: `c++ /tmp/tmpk4qrgiv9/testfile.cpp -o /tmp/tmpk4qrgiv9/output.obj -D_FILE_OFFSET_BITS=64 -c -std=c++17` -> 0
-Compiler accepts -std=c++17: YES
 Using cached compile:
-Cached command line:  c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmpk_jlawbu/testfile.cpp -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -fpermissive 
+Cached command line:  c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpr1c_xb1p/testfile.cpp -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -fpermissive 
 
 Code:
  
@@ -117,7 +111,7 @@ Cached compiler stdout:
 Cached compiler stderr:
  
 Using cached compile:
-Cached command line:  c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/testfile.cpp -o /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+Cached command line:  c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp -o /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
 
 Code:
  
@@ -132,13 +126,13 @@ Code:
 Cached compiler stdout:
  
 Cached compiler stderr:
- /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/testfile.cpp: In function 'int main()':
-/home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/testfile.cpp:6:17: error: '_LIBCPP_VERSION' was not declared in this scope
+ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp: In function 'int main()':
+/home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp:6:17: error: '_LIBCPP_VERSION' was not declared in this scope
     6 |                 _LIBCPP_VERSION;
       |                 ^~~~~~~~~~~~~~~
 
 Using cached compile:
-Cached command line:  c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer/testfile.cpp -o /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+Cached command line:  c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/testfile.cpp -o /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
 
 Code:
  
@@ -148,12 +142,12 @@ Code:
 Cached compiler stdout:
  
 Cached compiler stderr:
- /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer/testfile.cpp:3:15: error: expected nested-name-specifier before '_LIBCPP_VERSION'
+ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/testfile.cpp:3:15: error: expected nested-name-specifier before '_LIBCPP_VERSION'
     3 |         using _LIBCPP_VERSION;
       |               ^~~~~~~~~~~~~~~
 
 Using cached compile:
-Cached command line:  c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmpk_jlawbu/testfile.cpp -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -fpermissive 
+Cached command line:  c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpr1c_xb1p/testfile.cpp -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -fpermissive 
 
 Code:
  
@@ -169,7 +163,7 @@ Cached compiler stdout:
 Cached compiler stderr:
  
 Using cached compile:
-Cached command line:  c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/testfile.cpp -o /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+Cached command line:  c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp -o /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
 
 Code:
  
@@ -184,13 +178,13 @@ Code:
 Cached compiler stdout:
  
 Cached compiler stderr:
- /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/testfile.cpp: In function 'int main()':
-/home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp43zplz4m/testfile.cpp:6:17: error: '_LIBCPP_VERSION' was not declared in this scope
+ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp: In function 'int main()':
+/home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp:6:17: error: '_LIBCPP_VERSION' was not declared in this scope
     6 |                 _LIBCPP_VERSION;
       |                 ^~~~~~~~~~~~~~~
 
 Using cached compile:
-Cached command line:  c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer/testfile.cpp -o /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+Cached command line:  c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/testfile.cpp -o /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
 
 Code:
  
@@ -200,18 +194,70 @@ Code:
 Cached compiler stdout:
  
 Cached compiler stderr:
- /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmp8a_x8yer/testfile.cpp:3:15: error: expected nested-name-specifier before '_LIBCPP_VERSION'
+ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/testfile.cpp:3:15: error: expected nested-name-specifier before '_LIBCPP_VERSION'
+    3 |         using _LIBCPP_VERSION;
+      |               ^~~~~~~~~~~~~~~
+
+Using cached compile:
+Cached command line:  c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpr1c_xb1p/testfile.cpp -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -fpermissive 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("version")
+          #error "Header 'version' could not be found"
+         #endif
+        #else
+         #include <version>
+        #endif
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Using cached compile:
+Cached command line:  c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp -o /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ 
+        #include <version>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef _LIBCPP_VERSION
+                _LIBCPP_VERSION;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp: In function 'int main()':
+/home/islam/VisualStudioProjects/spatio/build/meson-private/tmpczojn2pg/testfile.cpp:6:17: error: '_LIBCPP_VERSION' was not declared in this scope
+    6 |                 _LIBCPP_VERSION;
+      |                 ^~~~~~~~~~~~~~~
+
+Using cached compile:
+Cached command line:  c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/testfile.cpp -o /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ 
+        #include <version>
+        using _LIBCPP_VERSION;
+        int main(void) { return 0; }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmpow0zd1a_/testfile.cpp:3:15: error: expected nested-name-specifier before '_LIBCPP_VERSION'
     3 |         using _LIBCPP_VERSION;
       |               ^~~~~~~~~~~~~~~
 
 Running compile:
-Working directory:  /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmpiic1e37c
+Working directory:  /home/islam/VisualStudioProjects/spatio/build/meson-private/tmp46o_pts9
 Code:
 
 -----------
-Command line: `c++ /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmpiic1e37c/testfile.cpp -o /home/islam/VisualStudioCodeProjects/spatio/build/meson-private/tmpiic1e37c/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs` -> 0
+Command line: `c++ /home/islam/VisualStudioProjects/spatio/build/meson-private/tmp46o_pts9/testfile.cpp -o /home/islam/VisualStudioProjects/spatio/build/meson-private/tmp46o_pts9/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs` -> 0
 stdout:
-install: /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/
-programs: =/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/bin/
-libraries: =/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/lib/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/x86_64-pc-linux-gnu/15.2.1/:/lib/../lib/:/usr/lib/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+install: /usr/lib/gcc/aarch64-redhat-linux/15/
+programs: =/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/15/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../aarch64-redhat-linux/bin/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../aarch64-redhat-linux/bin/
+libraries: =/usr/lib/gcc/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../aarch64-redhat-linux/lib/aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../aarch64-redhat-linux/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../aarch64-redhat-linux/15/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../lib64/:/lib/aarch64-redhat-linux/15/:/lib/../lib64/:/usr/lib/aarch64-redhat-linux/15/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../../aarch64-redhat-linux/lib/:/usr/lib/gcc/aarch64-redhat-linux/15/../../../:/lib/:/usr/lib/
 -----------

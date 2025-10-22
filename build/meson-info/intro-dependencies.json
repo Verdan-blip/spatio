@@ -9,7 +9,7 @@
       "-I/usr/include/libdrm"
     ],
     "link_args": [
-      "/usr/lib/libLouvre.so"
+      "/usr/lib64/libLouvre.so"
     ],
     "include_directories": [],
     "sources": [],
@@ -18,6 +18,25 @@
     "depends": [],
     "meson_variables": [
       "louvre_dep"
+    ]
+  },
+  {
+    "name": "pixman-1",
+    "type": "pkgconfig",
+    "version": "0.46.2",
+    "compile_args": [
+      "-I/usr/include/pixman-1"
+    ],
+    "link_args": [
+      "/usr/lib64/libpixman-1.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "pixman_dep"
     ]
   }
 ]

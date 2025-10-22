@@ -8,7 +8,18 @@
 #include "../include/SpatioOutput.h"
 #include "../include/SpatioCompositor.h"
 
-SpatioCompositor::SpatioCompositor() { };
+SpatioCompositor::SpatioCompositor() {
+    LRGBAF color = {
+        .r = 0.f,
+        .g = 1.f,
+        .b = 0.f,
+        .a = 1.f
+    };
+    scene.mainView()->setClearColor(color);
+    
+    // Allows to use custom cursor size
+    softwareCursor.enableDstSize(true);
+};
 
 void SpatioCompositor::initialized() {
     seat()->keyboard()->setKeymap(nullptr, nullptr, "latam", nullptr);
@@ -34,5 +45,13 @@ LFactoryObject* SpatioCompositor::createObjectRequest(LFactoryObject::Type objec
             return new SpatioOutput(params);
         default:
             return LCompositor::createObjectRequest(objectType, params);
+    }
+}
+
+void SpatioCompositor::placeOutputsVertically() {
+    Int32 totalWidth = 0;
+    for (LOutput *output : outputs()) {
+        output->setPos(LPoint(totalWidth, 0));
+        totalWidth += output->size().w();
     }
 }

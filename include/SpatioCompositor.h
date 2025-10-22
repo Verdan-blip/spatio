@@ -4,6 +4,7 @@
 #include <LCompositor.h>
 #include <LScene.h>
 #include <LLayerView.h>
+#include <LSceneView.h>
 #include <LTextureView.h>
 
 using namespace Louvre;
@@ -15,6 +16,16 @@ class SpatioCompositor : public LCompositor {
     void initialized() override;
     
     LFactoryObject* createObjectRequest(LFactoryObject::Type objectType, const void *params) override;
+
+    LScene scene;
+    LLayerView backgroundLayer { scene.mainView() };
+    LLayerView surfacesLayer { scene.mainView() };
+    LLayerView overlayLayer { scene.mainView() };
+    LLayerView fullscreenLayer { scene.mainView() };
+    LLayerView cursorLayer { scene.mainView() };
+    LTextureView softwareCursor { nullptr, &cursorLayer };
+
+    void placeOutputsVertically();
 };
 
 #endif

@@ -28,7 +28,7 @@ rule CUSTOM_COMMAND
  restat = 1
 
 rule REGENERATE_BUILD
- command = /usr/bin/meson --internal regenerate /home/islam/VisualStudioCodeProjects/spatio .
+ command = /usr/bin/meson --internal regenerate /home/islam/VisualStudioProjects/spatio .
  description = Regenerating build files
  generator = 1
 
@@ -41,20 +41,25 @@ build PHONY: phony
 build spatio.p/src_main.cpp.o: cpp_COMPILER ../src/main.cpp
  DEPFILE = spatio.p/src_main.cpp.o.d
  DEPFILE_UNQUOTED = spatio.p/src_main.cpp.o.d
- ARGS = -Ispatio.p -I. -I.. -I/usr/include/Louvre -I/usr/include/pixman-1 -I/usr/include/libdrm -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c++17 -O0 -g -std=c++20
+ ARGS = -Ispatio.p -I. -I.. -I/usr/include/Louvre -I/usr/include/pixman-1 -I/usr/include/libdrm -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -O0 -g -std=c++20
 
 build spatio.p/src_SpatioCompositor.cpp.o: cpp_COMPILER ../src/SpatioCompositor.cpp
  DEPFILE = spatio.p/src_SpatioCompositor.cpp.o.d
  DEPFILE_UNQUOTED = spatio.p/src_SpatioCompositor.cpp.o.d
- ARGS = -Ispatio.p -I. -I.. -I/usr/include/Louvre -I/usr/include/pixman-1 -I/usr/include/libdrm -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c++17 -O0 -g -std=c++20
+ ARGS = -Ispatio.p -I. -I.. -I/usr/include/Louvre -I/usr/include/pixman-1 -I/usr/include/libdrm -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -O0 -g -std=c++20
 
 build spatio.p/src_SpatioOutput.cpp.o: cpp_COMPILER ../src/SpatioOutput.cpp
  DEPFILE = spatio.p/src_SpatioOutput.cpp.o.d
  DEPFILE_UNQUOTED = spatio.p/src_SpatioOutput.cpp.o.d
- ARGS = -Ispatio.p -I. -I.. -I/usr/include/Louvre -I/usr/include/pixman-1 -I/usr/include/libdrm -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c++17 -O0 -g -std=c++20
+ ARGS = -Ispatio.p -I. -I.. -I/usr/include/Louvre -I/usr/include/pixman-1 -I/usr/include/libdrm -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -O0 -g -std=c++20
 
-build spatio: cpp_LINKER spatio.p/src_main.cpp.o spatio.p/src_SpatioCompositor.cpp.o spatio.p/src_SpatioOutput.cpp.o | /usr/lib/libLouvre.so
- LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined /usr/lib/libLouvre.so
+build spatio.p/src_SpatioTopbar.cpp.o: cpp_COMPILER ../src/SpatioTopbar.cpp
+ DEPFILE = spatio.p/src_SpatioTopbar.cpp.o.d
+ DEPFILE_UNQUOTED = spatio.p/src_SpatioTopbar.cpp.o.d
+ ARGS = -Ispatio.p -I. -I.. -I/usr/include/Louvre -I/usr/include/pixman-1 -I/usr/include/libdrm -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -O0 -g -std=c++20
+
+build spatio: cpp_LINKER spatio.p/src_main.cpp.o spatio.p/src_SpatioCompositor.cpp.o spatio.p/src_SpatioOutput.cpp.o spatio.p/src_SpatioTopbar.cpp.o | /usr/lib64/libLouvre.so /usr/lib64/libpixman-1.so
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined -Wl,--start-group /usr/lib64/libLouvre.so /usr/lib64/libpixman-1.so -Wl,--end-group
 
 # Test rules
 
@@ -89,6 +94,12 @@ build meson-internal__dist: CUSTOM_COMMAND PHONY
  pool = console
 
 # Suffix
+
+build ctags: phony meson-internal__ctags
+
+build meson-internal__ctags: CUSTOM_COMMAND PHONY
+ COMMAND = /usr/bin/meson --internal tags ctags /home/islam/VisualStudioProjects/spatio
+ pool = console
 
 build uninstall: phony meson-internal__uninstall
 

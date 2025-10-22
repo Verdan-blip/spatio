@@ -11,15 +11,17 @@ project(
 add_project_arguments('-std=c++20', language: 'cpp')
 
 louvre_dep = dependency('Louvre')
+pixman_dep = dependency('pixman-1')
 
 sources = [
   'src/main.cpp',
   'src/SpatioCompositor.cpp',
-  'src/SpatioOutput.cpp'
+  'src/SpatioOutput.cpp',
+  'src/SpatioTopbar.cpp'
 ]
 
 executable('spatio',
   sources,
-  dependencies: [louvre_dep],
+  dependencies: [louvre_dep, pixman_dep],
   install: false
 )

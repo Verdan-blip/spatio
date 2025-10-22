@@ -2,8 +2,13 @@
 #define SPATIO_OUTPUT_H
 
 #include <LOutput.h>
+#include <LTextureView.h>
+#include <LLayerView.h>
+#include "../include/SpatioCompositor.h"
 
 using namespace Louvre;
+
+class SpatioTopbar;
 
 class SpatioOutput : public LOutput {
     public:
@@ -15,8 +20,13 @@ class SpatioOutput : public LOutput {
     void paintGL() override;
     void uninitializeGL() override;
 
+    //Extensions
+    SpatioCompositor *spatioCompositor = nullptr;
+    SpatioTopbar *topbar { nullptr };
+
     private:
-    LTexture *wallpaper { nullptr };
+    void updateWallpaper();
+    LTextureView* wallpaperView;
 };
 
 #endif
