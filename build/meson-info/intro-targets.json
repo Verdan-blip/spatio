@@ -36,7 +36,8 @@
           "/home/islam/VisualStudioProjects/spatio/src/main.cpp",
           "/home/islam/VisualStudioProjects/spatio/src/SpatioCompositor.cpp",
           "/home/islam/VisualStudioProjects/spatio/src/SpatioOutput.cpp",
-          "/home/islam/VisualStudioProjects/spatio/src/SpatioTopbar.cpp"
+          "/home/islam/VisualStudioProjects/spatio/src/SpatioTopbar.cpp",
+          "/home/islam/VisualStudioProjects/spatio/src/SpatioSurface.cpp"
         ],
         "generated_sources": [],
         "unity_sources": []

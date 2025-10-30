@@ -6,19 +6,19 @@
 #include <LSceneView.h>
 #include <LColor.h>
 #include "../include/SpatioOutput.h"
+#include "../include/SpatioSurface.h"
 #include "../include/SpatioCompositor.h"
 
 SpatioCompositor::SpatioCompositor() {
     LRGBAF color = {
-        .r = 0.f,
-        .g = 1.f,
-        .b = 0.f,
+        .r = 0.3f,
+        .g = 0.2f,
+        .b = 0.7f,
         .a = 1.f
     };
-    scene.mainView()->setClearColor(color);
-    
-    // Allows to use custom cursor size
-    softwareCursor.enableDstSize(true);
+    this->scene.mainView()->setClearColor(color);
+
+    //softwareCursor.enableDstSize(true);
 };
 
 void SpatioCompositor::initialized() {
@@ -43,6 +43,8 @@ LFactoryObject* SpatioCompositor::createObjectRequest(LFactoryObject::Type objec
     switch (objectType) {
         case LFactoryObject::Type::LOutput:
             return new SpatioOutput(params);
+        case LFactoryObject::Type::LSurface:
+            return new SpatioSurface(&surfacesLayer, params);
         default:
             return LCompositor::createObjectRequest(objectType, params);
     }

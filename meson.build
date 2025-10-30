@@ -17,7 +17,8 @@ sources = [
   'src/main.cpp',
   'src/SpatioCompositor.cpp',
   'src/SpatioOutput.cpp',
-  'src/SpatioTopbar.cpp'
+  'src/SpatioTopbar.cpp',
+  'src/SpatioSurface.cpp'
 ]
 
 executable('spatio',

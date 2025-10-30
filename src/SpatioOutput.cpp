@@ -9,6 +9,8 @@
 #include <LDND.h>
 #include <LCursor.h>
 #include <LRegion.h>
+#include <LLog.h>
+#include <iostream>
 #include "../include/SpatioCompositor.h"
 #include "../include/SpatioOutput.h"
 #include "../include/SpatioTopbar.h"
@@ -17,13 +19,13 @@ LRect scaleToRect(const LSize &target, const LSize &dest);
 
 
 SpatioOutput::SpatioOutput(const void *params) : LOutput(params) { 
-    spatioCompositor = (SpatioCompositor*) compositor();
-    topbar = new SpatioTopbar(this);
+    this->spatioCompositor = (SpatioCompositor*) compositor();
+    this->topbar = new SpatioTopbar(this);
 
-    wallpaperView = new LTextureView(nullptr, &spatioCompositor->backgroundLayer);
+    this->wallpaperView = new LTextureView(nullptr, &spatioCompositor->backgroundLayer);
 
     const LRegion emptyRegion;
-    wallpaperView->setTranslucentRegion(&emptyRegion);
+    this->wallpaperView->setTranslucentRegion(&emptyRegion);
 };
 
 void SpatioOutput::initializeGL() {
@@ -50,6 +52,12 @@ void SpatioOutput::resizeGL() {
 }
 
 void SpatioOutput::paintGL() {
+    spatioCompositor->softwareCursor.setTexture(cursor()->texture());
+    spatioCompositor->softwareCursor.setPos(cursor()->pos());
+    spatioCompositor->softwareCursor.setSrcRect(LRectF(0, 0, 32, 32));
+    spatioCompositor->softwareCursor.setDstSize(cursor()->rect().size());
+    spatioCompositor->softwareCursor.setVisible(cursor()->visible());
+
     spatioCompositor->scene.handlePaintGL(this);
 }
 

@@ -18,6 +18,7 @@ class SpatioCompositor : public LCompositor {
     LFactoryObject* createObjectRequest(LFactoryObject::Type objectType, const void *params) override;
 
     LScene scene;
+    
     LLayerView backgroundLayer { scene.mainView() };
     LLayerView surfacesLayer { scene.mainView() };
     LLayerView overlayLayer { scene.mainView() };

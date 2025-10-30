@@ -21,7 +21,7 @@ class SpatioOutput : public LOutput {
     void uninitializeGL() override;
 
     //Extensions
-    SpatioCompositor *spatioCompositor = nullptr;
+    SpatioCompositor *spatioCompositor { nullptr };
     SpatioTopbar *topbar { nullptr };
 
     private:

@@ -22,5 +22,11 @@
     "command": "c++ -Ispatio.p -I. -I.. -I/usr/include/Louvre -I/usr/include/pixman-1 -I/usr/include/libdrm -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -O0 -g -std=c++20 -MD -MQ spatio.p/src_SpatioTopbar.cpp.o -MF spatio.p/src_SpatioTopbar.cpp.o.d -o spatio.p/src_SpatioTopbar.cpp.o -c ../src/SpatioTopbar.cpp",
     "file": "../src/SpatioTopbar.cpp",
     "output": "spatio.p/src_SpatioTopbar.cpp.o"
+  },
+  {
+    "directory": "/home/islam/VisualStudioProjects/spatio/build",
+    "command": "c++ -Ispatio.p -I. -I.. -I/usr/include/Louvre -I/usr/include/pixman-1 -I/usr/include/libdrm -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -O0 -g -std=c++20 -MD -MQ spatio.p/src_SpatioSurface.cpp.o -MF spatio.p/src_SpatioSurface.cpp.o.d -o spatio.p/src_SpatioSurface.cpp.o -c ../src/SpatioSurface.cpp",
+    "file": "../src/SpatioSurface.cpp",
+    "output": "spatio.p/src_SpatioSurface.cpp.o"
   }
 ]
